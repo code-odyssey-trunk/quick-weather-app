@@ -1,24 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Weather App
+
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app). This weather app fetches weather data using the WeatherAPI.
 
 ## Getting Started
 
-First, run the development server:
+Follow these steps to set up the project locally:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 1. Clone the Repository
+
+Clone the repository to your local machine:
+
+`git clone <repository-url>`
+`cd weather-app`
+
+### 2. Install Dependencies
+
+Install the required dependencies using npm or your preferred package manager:
+
+`npm install`
+
+
+### 3. Set Up Environment Variables
+
+Create a `.env.local` file in the root of your project and add your Weather API key:
+
+'WEATHER_API_KEY=your_api_key_here'
+
+
+Make sure to replace `your_api_key_here` with your actual API key from [WeatherAPI](https://www.weatherapi.com/).
+
+### 4. Run the Development Server
+
+Start the development server:
+
+`npm run dev`
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 5. Using the Weather App
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Enter a city name in the input field and click the "Get Weather" button to fetch the current weather data.
+- If the location is invalid, an error message will be displayed.
+- You can clear the input and results by clicking the "Clear" button.
 
 ## Learn More
 
